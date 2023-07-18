@@ -1,1 +1,62 @@
+*{
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
 
+:root{
+  --main-color:#D64200;
+  --button-color:#D64200;
+  --validity-color:green;
+  --error-color:red;
+}
+
+.create-account-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+  background-color:var(--main-color);
+  width:100%;
+  text-align:center;
+}
+
+.form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1600px;
+}
+
+.user-details{
+    max-width: 645px;
+    width:50%; 
+}
+
+.wide{
+    max-width: 1332px !important;
+    width:100% !important;
+}
+
+input[type="text"], input[type="email"], input[type="password"],
+input[type="number"], input[type="age"], input[type="file"], textarea, select{
+  max-width: 645px;
+  width:100%;
+}
+
+input[type="email"], textarea{
+  max-width:1332px;
+  width:100%;
+}
+
+input:invalid{
+  border-color:var(--error-color);
+  color:var(--error-color);
+}
+
+input:valid{
+  border-color:var(--validity-color);
+  color:var(--validity-color);
+}

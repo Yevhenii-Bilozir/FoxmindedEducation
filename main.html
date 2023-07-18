@@ -1,1 +1,90 @@
-
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <div class="create-account-page">
+            <header class="header">
+                <h1>Create account</h1>
+            </header>
+            <form action="#" class="form">
+                <div class="user-details">
+                    <label for="first-name">First name*</label><br>
+                    <input type="text" placeholder="Enter your first name" id="first-name" name="first-name" required>
+                </div>
+                <div class="user-details">
+                    <label for="last-name">Last name*</label><br>
+                    <input  type="text" placeholder="Enter your last name" id="last-name" name="last-name" required>
+                </div>
+                <div class="user-details wide">
+                    <label for="e-mail">Email*</label><br>
+                    <input  type="email" placeholder="Enter your email" id="e-mail" name="e-mail" required>
+                </div>
+                <div class="user-details">
+                    <label for="password">Password*</label><br>
+                    <input  type="password" placeholder="Enter your password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}" required>
+                </div>
+                <div class="user-details">
+                    <label for="confirm-password">Confirm password*</label><br>
+                    <input  type="password" placeholder="Enter your confirm password" id="confirm-password"
+                        name="confirm-password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}" required>
+                </div>
+                <div class="user-details">
+                    <label for="gender">Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="MALE">
+                    <label for="male">Male</label>
+                    <input type="radio" id="fem" name="gender" value="FEMALE">
+                    <label for="fem">Female</label>
+                </div>
+                <div class="user-details">
+                    <label for="hobbies">Hobbies:</label><br>
+                    <input type="radio" id="musics" name="hobbies" value="MUSICS">
+                    <label for="musics">Musics</label>
+                    <input type="radio" id="travels" name="hobbies" value="TRAVELS">
+                    <label for="travels">Travels</label>
+                    <input type="radio" id="sports" name="hobbies" value="SPORTS">
+                    <label for="sports">Sports</label>
+                    <input type="radio" id="movies" name="hobbies" value="MOVIES">
+                    <label for="movies">Movies</label>
+                </div>
+                <div class="user-details">
+                    <label for="src-of-income">Source of Income:</label><br>
+                    <select  name="src-of-income" id="src-of-income" required>
+                        <option value="">Select your source of Income</option>
+                        <option value="fulltime">Full-time job</option>
+                        <option value="contract">Work on contract</option>
+                        <option value="student">Student</option>
+                        <option value="selfemployed">Self-employed</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="user-details">
+                    <label for="">Income</label><br>
+                    <input  type="range" min="0" max="250" value="50" id="income" name="Income">
+                </div>
+    
+                <div class="user-details">
+                    <label for="profile-photo">Upload Profile Picture</label>
+                    <input  type="file" id="phofile-photo" name="ProfilePhoto">
+                </div>
+                <div class="user-details">
+                    <label for="age">Age</label><br>
+                    <input  type="number" min="12" max="99" id="age" name="age" pattern="(?=.*[0-9])" required>
+                </div>
+    
+                <div class="user-details wide">
+                    <label for="bio">Bio</label><br>
+                  <textarea id="bio" name="bio" placeholder="Tell about yourself"></textarea>
+                </div>
+                <div class="button">
+                    <input class="create-button" type="submit" value="Create">
+                </div>
+            </form>
+        </div>
+    </body>    
+</html>
